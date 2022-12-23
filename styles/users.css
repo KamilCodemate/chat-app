@@ -1,0 +1,82 @@
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #b3b3b3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #d32b6d;
+  background: -webkit-linear-gradient(top, #d32b6d, #697fcc);
+  background: -moz-linear-gradient(top, #d32b6d, #697fcc);
+  background: linear-gradient(to bottom, #d32b6d, #697fcc);
+}
+.formElement label {
+  font-weight: 400;
+}
+.mainField {
+  padding: 50px;
+  height: auto;
+  width: 30vw;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.mainContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainContent img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.info {
+  margin-left: 10px;
+}
+.name {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.info p {
+  font-size: 0.8em;
+}
+.userHr {
+  width: 100%;
+  border: 0.5% solid grey;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.search input {
+  width: 90%;
+  height: 30px;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+.search button {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+.search button:hover {
+  cursor: pointer;
+}
+.userInfo {
+  display: flex;
+}
+.active,
+.disactive {
+  font-size: 0.9em;
+}
+.active {
+  color: rgb(17, 167, 17);
+}
+.other {
+  margin-top: 20px;
+}
+.disactive {
+  color: white;
+}
