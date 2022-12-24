@@ -45,6 +45,7 @@
     </form>
    </section>
    <div class="gotAcc">Masz już konto? <a href="./form.php">Zaloguj się teraz</a> </div>
+   <script src="./scripts/signUP.js"></script>
   </div>
  </div>
 </body>
