@@ -1,0 +1,145 @@
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #b3b3b3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #d32b6d;
+  background: -webkit-linear-gradient(top, #d32b6d, #697fcc);
+  background: -moz-linear-gradient(top, #d32b6d, #697fcc);
+  background: linear-gradient(to bottom, #d32b6d, #697fcc);
+}
+.formElement label {
+  font-weight: 400;
+}
+.mainField {
+  height: auto;
+  width: 40vw;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.mainContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainContent img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.info {
+  margin-left: 10px;
+}
+.name {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.info p {
+  font-size: 0.8em;
+}
+
+.userInfo {
+  display: flex;
+}
+.user {
+  width: 100%;
+  display: flex;
+  padding-left: 10px;
+  background-color: #ffffff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.userInfo {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.userInfo .fa-arrow-left {
+  margin-right: 10px;
+  font-size: 1.3em;
+}
+.chatElement {
+  width: 70%;
+
+  margin-top: 20px;
+  padding: 5px;
+
+  color: white;
+}
+
+.messages {
+  max-height: 80vh;
+  margin-top: 10px;
+  background-color: rgb(212, 212, 212);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 10px;
+  overflow-y: auto;
+}
+
+.msgContent {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #747474;
+  padding: 10px;
+}
+.inMsg {
+  align-self: flex-start;
+}
+
+.outMsg {
+  align-self: flex-end;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #272727;
+  padding: 10px;
+}
+.inMsg img {
+  width: 60px;
+  height: 30px;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+.inMsg {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.writing {
+  background-color: white;
+  height: 7vh;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.writing input[type='text'] {
+  width: 70%;
+  height: 4vh;
+  font-size: 1em;
+  border-radius: 10px;
+  padding-left: 5px;
+}
+.writing button {
+  width: 4vh;
+  height: 4vh;
+  margin-left: 5px;
+  border-radius: 10px;
+  background-color: #272727;
+  color: white;
+  transition: 0.4s;
+}
+.writing button:hover {
+  cursor: pointer;
+  background-color: black;
+}
