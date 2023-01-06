@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once "connect.php";
 
 $validExts = ['png', 'jpeg', 'jpg'];
@@ -15,7 +16,7 @@ if(filter_var($email, FILTER_VALIDATE_EMAIL))
     $qry = mysqli_query($conn, "SELECT email FROM users WHERE email = '$email'");
     if(mysqli_num_rows($qry) > 0)
     {
-      echo "$email - this email already exist!";
+      echo "$email - Ten adres email już istnieje!";
     }
     else{
       if(isset($_FILES['image']))
@@ -45,21 +46,21 @@ if(filter_var($email, FILTER_VALIDATE_EMAIL))
               $_SESSION['unique_id'] = $row['unique_id'];
               echo 'success';
             } else
-              echo 'Something went wrong';
+              echo 'Coś poszło nie tak...';
           }
         }
-        else echo "Only .jpg and .png images are accepted!";
+        else echo "Akceptowane są jedynie pliki .png, .jpg oraz .jpeg!";
       }
       else {
-        echo "You must select an avatar image!";
+        echo "Wybierz swój avatar!";
       }
     }
 } else {
-  echo "Entered email is incorrect";
+  echo "Podany adres email jest niepoprawny!";
 }
 
 
 }else{
- echo "Please fill all input fields!";
+ echo "Wypełnij wszystkie pola!";
 }
 ?>

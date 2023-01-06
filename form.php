@@ -13,7 +13,7 @@
 
 <body>
  <div class="container">
-  <div class="mainField signUp">
+  <div class="mainField logIn">
    <section class="form logIn">
     <header>Czat Online</header>
     <hr class="headerLine" />
@@ -21,10 +21,10 @@
      <div class="error"> </div>
 
      <div class="formElement">
-      <input type="email" placeholder="Adres Email" />
+      <input type="email" placeholder="Adres Email" name='email' />
      </div>
      <div class="formElement">
-      <input type="password" placeholder="Hasło" />
+      <input type="password" placeholder="Hasło" name='password' />
      </div>
      <br />
 
@@ -33,9 +33,10 @@
      </div>
     </form>
    </section>
-   <div class="gotAcc">Masz już konto? <a href="./index.php">Zaloguj się teraz</a> </div>
+   <div class="gotAcc">Nie masz jeszcze konta <a href="./index.php">Zaloguj się teraz</a> </div>
   </div>
  </div>
+ <script src="./scripts/logIn.js"></script>
 </body>
 
 </html>
