@@ -11,10 +11,9 @@ btn.addEventListener('click', (e) => {
   xhr.addEventListener('load', () => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {
-        let data = xhr.response;
-        console.log(data);
       }
     }
   });
-  xhr.send();
+  let formData = new formData(form);
+  xhr.send(formData);
 });

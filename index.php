@@ -20,22 +20,22 @@
      <div class="error"> </div>
 
      <div class="formElement">
-      <input type="text" placeholder="Imię" />
+      <input type="text" placeholder="Imię" name="name" required />
      </div>
      <div class="formElement">
-      <input type="text" placeholder="Nazwisko" />
+      <input type="text" placeholder="Nazwisko" name="surname" required />
      </div>
 
      <div class="formElement">
-      <input type="email" placeholder="Adres Email" />
+      <input type="email" placeholder="Adres Email" name="email" required />
      </div>
      <div class="formElement">
-      <input type="password" placeholder="Hasło" />
+      <input type="password" placeholder="Hasło" name="password" required />
      </div>
      <br />
      <div class="formElement">
       <label>Wybierz Avatar</label>
-      <input type="file" />
+      <input type="file" name="image" required />
      </div>
      <br />
 
