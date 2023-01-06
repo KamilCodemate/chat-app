@@ -16,26 +16,26 @@
   <div class="mainField">
    <section class="form signUp">
     <header>Czat Online</header>
-    <form action="#">
+    <form action="#" enctype="multipart/form-data">
      <div class="error"> </div>
 
      <div class="formElement">
-      <input type="text" placeholder="Imię" name="name" required />
+      <input type="text" placeholder="Imię" name="name" />
      </div>
      <div class="formElement">
-      <input type="text" placeholder="Nazwisko" name="surname" required />
+      <input type="text" placeholder="Nazwisko" name="surname" />
      </div>
 
      <div class="formElement">
-      <input type="email" placeholder="Adres Email" name="email" required />
+      <input type="text" placeholder="Adres Email" name="email" />
      </div>
      <div class="formElement">
-      <input type="password" placeholder="Hasło" name="password" required />
+      <input type="password" placeholder="Hasło" name="password" />
      </div>
      <br />
      <div class="formElement">
       <label>Wybierz Avatar</label>
-      <input type="file" name="image" required />
+      <input type="file" name="image" />
      </div>
      <br />
 
