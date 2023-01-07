@@ -54,3 +54,17 @@ writingBtn.addEventListener('click', () => {
     msgContainer.scrollTop = msgContainer.scrollHeight;
   }, 300);
 });
+
+setInterval(() => {
+  let xhr = new XMLHttpRequest();
+  xhr.open('POST', 'php/downloadMessages.php', true);
+  xhr.addEventListener('load', () => {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+      if (xhr.status === 200) {
+        msgContainer.innerHTML = xhr.response;
+      }
+    }
+  });
+  let formData = new FormData(form);
+  xhr.send(formData);
+}, 2000);

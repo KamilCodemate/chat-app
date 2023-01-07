@@ -12,7 +12,7 @@ $out_id = mysqli_real_escape_string($conn, $_POST['outId']);
  OR out_id = $in_id AND in_id = $out_id ORDER BY id ASC");
 
 
- $qry2 = mysqli_query($conn, "SELECT * FROM users WHERE unique_id = $in_id"); //1066737485
+ $qry2 = mysqli_query($conn, "SELECT * FROM users WHERE unique_id = $in_id"); 
  if(mysqli_num_rows($qry2) > 0)
  {
   $row2 = mysqli_fetch_assoc($qry2);
