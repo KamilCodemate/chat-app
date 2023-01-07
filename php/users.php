@@ -2,6 +2,8 @@
 include_once('connect.php');
 session_start();
 
+$out_id = $_SESSION['unique_id'];
+
 $qry = mysqli_query($conn, "SELECT * FROM users");
 $eq = '';
 
