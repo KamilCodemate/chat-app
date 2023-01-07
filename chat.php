@@ -54,62 +54,8 @@ if(mysqli_num_rows($qry) > 0)
     </header>
    </div>
    <div class="messages">
-    <div class="chatElement inMsg">
-     <img src="./photo.jpg" alt="" />
-     <div class="msgContent">
-      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis</span>
-     </div>
-    </div>
 
-    <div class="chatElement outMsg">
-     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis</span>
-    </div>
-    <div class="chatElement inMsg">
-     <img src="./photo.jpg" alt="" />
-     <div class="msgContent">
-      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis</span>
-     </div>
-    </div>
-    <div class="chatElement outMsg">
-     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis</span>
-    </div>
-    <div class="chatElement inMsg">
-     <img src="./photo.jpg" alt="" />
-     <div class="msgContent">
-      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis</span>
-     </div>
-    </div>
-    <div class="chatElement outMsg">
-     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis</span>
-    </div>
-    <div class="chatElement inMsg">
-     <img src="./photo.jpg" alt="" />
-     <div class="msgContent">
-      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis</span>
-     </div>
-    </div>
 
-    <div class="chatElement outMsg">
-     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis</span>
-    </div>
-    <div class="chatElement inMsg">
-     <img src="./photo.jpg" alt="" />
-     <div class="msgContent">
-      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis</span>
-     </div>
-    </div>
-    <div class="chatElement outMsg">
-     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis</span>
-    </div>
-    <div class="chatElement inMsg">
-     <img src="./photo.jpg" alt="" />
-     <div class="msgContent">
-      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis</span>
-     </div>
-    </div>
-    <div class="chatElement outMsg">
-     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis</span>
-    </div>
    </div>
    <div class="writing">
     <form action="#" class='writingForm'>

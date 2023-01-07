@@ -83,6 +83,7 @@
   padding-left: 20px;
   padding-right: 10px;
   overflow-y: auto;
+  padding-bottom: 20px;
 }
 
 .msgContent {
@@ -143,4 +144,8 @@
 .writing button:hover {
   cursor: pointer;
   background-color: black;
+}
+
+.writingForm {
+  width: 100%;
 }
