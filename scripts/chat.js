@@ -50,6 +50,7 @@ setTimeout(() => {
 }, 100);
 
 writingBtn.addEventListener('click', () => {
+  input.value = '';
   setTimeout(() => {
     msgContainer.scrollTop = msgContainer.scrollHeight;
   }, 300);

@@ -24,7 +24,7 @@ $eq2 = '';
         <img src="./php/images/'.$row['img'].'" alt="" />
         <div class="info">
          <span class="name">'.$row['name']." ".$row['surname'].'</span>
-         <p>'.$row['status'].'</p>
+         <p>'.$eq2.'</p>
         </div>
        </div>
       </a>
