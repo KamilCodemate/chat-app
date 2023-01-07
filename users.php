@@ -44,7 +44,7 @@ if(mysqli_num_rows($qry) > 0)
         <p><?php echo $row['status']?></p>
        </div>
       </div>
-      <a href="#" class="logOut">Wyloguj się</a>
+      <a href="./php/logout.php?user_id=<?php echo $row['unique_id']?>" class="logOut">Wyloguj się</a>
      </div>
     </header>
 

@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 include_once "connect.php";
 
 $validExts = ['png', 'jpeg', 'jpg'];
@@ -17,7 +18,8 @@ else{
  if(mysqli_num_rows($qry) > 0)
  {
   $row = mysqli_fetch_assoc($qry);
-  $_SESSION['unique_id'] = $row['unique_id'];
+ $uid = $_SESSION['unique_id'] = $row['unique_id'];
+  $qry2 = mysqli_query($conn, "UPDATE users SET status = 'Aktywny Teraz' WHERE unique_id = '$uid'");
   echo 'success';
  }
  else{
