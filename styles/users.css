@@ -5,11 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background: #d32b6d;
-  background: -webkit-linear-gradient(top, #d32b6d, #697fcc);
-  background: -moz-linear-gradient(top, #d32b6d, #697fcc);
-  background: linear-gradient(to bottom, #d32b6d, #697fcc);
+  background-color: #171717;
 }
 .formElement label {
   font-weight: 400;
@@ -20,6 +16,8 @@
   width: 30vw;
   background-color: white;
   border-radius: 10px;
+  min-width: 450px;
+  max-width: 500px;
 }
 
 .mainContent {
