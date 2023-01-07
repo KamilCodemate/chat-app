@@ -17,7 +17,7 @@ search.addEventListener('keyup', () => {
   xhr.send('searchValue=' + searchValue);
 });
 
-setInterval(() => {
+addEventListener('load', () => {
   let xhr = new XMLHttpRequest();
   xhr.open('GET', 'php/users.php', true);
   xhr.addEventListener('load', () => {
@@ -28,4 +28,17 @@ setInterval(() => {
     }
   });
   xhr.send();
-}, 100);
+});
+
+search.addEventListener('keydown', () => {
+  let xhr = new XMLHttpRequest();
+  xhr.open('GET', 'php/users.php', true);
+  xhr.addEventListener('load', () => {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+      if (xhr.status === 200) {
+        userList.innerHTML = searchValue === '' ? xhr.response : prevResponse;
+      }
+    }
+  });
+  xhr.send();
+});
