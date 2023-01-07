@@ -43,7 +43,7 @@ if(mysqli_num_rows($qry) > 0)
       ?>
      <div class="mainContent">
       <div class="userInfo">
-       <i class="fa-solid fa-arrow-left"></i>
+       <a href='./users.php'> <i class="fa-solid fa-arrow-left"></i></a>
        <img src="./php/images/<?php echo $row['img']?>" alt="" />
        <div class="info">
         <span class="name"><?php echo $row['name']." ".$row['surname']?></span>
