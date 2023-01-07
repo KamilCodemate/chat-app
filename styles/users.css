@@ -80,3 +80,7 @@
 .disactive {
   color: white;
 }
+.mainContent a {
+  text-decoration: none;
+  color: black;
+}

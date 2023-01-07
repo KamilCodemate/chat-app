@@ -1,0 +1,31 @@
+const search = document.querySelector('.searchBar');
+const userList = document.querySelector('.userList');
+let searchValue = '';
+let prevResponse = '';
+search.addEventListener('keyup', () => {
+  searchValue = search.value;
+  let xhr = new XMLHttpRequest();
+  xhr.open('POST', 'php/search.php', true);
+  xhr.addEventListener('load', () => {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+      if (xhr.status === 200) {
+        prevResponse = xhr.response;
+      }
+    }
+  });
+  xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  xhr.send('searchValue=' + searchValue);
+});
+
+setInterval(() => {
+  let xhr = new XMLHttpRequest();
+  xhr.open('GET', 'php/users.php', true);
+  xhr.addEventListener('load', () => {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+      if (xhr.status === 200) {
+        userList.innerHTML = searchValue === '' ? xhr.response : prevResponse;
+      }
+    }
+  });
+  xhr.send();
+}, 100);

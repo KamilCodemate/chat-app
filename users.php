@@ -36,6 +36,7 @@ if(mysqli_num_rows($qry) > 0)
    <div class="user">
     <header>
      <div class="mainContent">
+
       <div class="userInfo">
        <img src="./php/images/<?php echo $row['img']?>" alt="" />
        <div class="info">
@@ -50,65 +51,15 @@ if(mysqli_num_rows($qry) > 0)
     <hr class="userHr" />
     <div class="search">
      <span>Aby rozpocząć czatowanie, wybierz użytkownika</span>
-     <input type="text" placeholder="Wpisz imię, aby wyszukać..." />
+     <input type="text" placeholder="Wpisz imię, aby wyszukać..." class='searchBar' />
      <button><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
 
-    <div class="userList">
-     <div class="mainContent other">
-      <div class="userInfo">
-       <img src="./photo.jpg" alt="" />
-       <div class="info">
-        <span class="name">Anita Morszczuk</span>
-        <p>Aktywny Teraz</p>
-       </div>
-      </div>
-      <i class="active fa-solid fa-circle"></i>
-     </div>
-     <div class="mainContent other">
-      <div class="userInfo">
-       <img src="./photo.jpg" alt="" />
-       <div class="info">
-        <span class="name">Anita Morszczuk</span>
-        <p>Aktywny Teraz</p>
-       </div>
-      </div>
-      <i class="active fa-solid fa-circle"></i>
-     </div>
-     <div class="mainContent other">
-      <div class="userInfo">
-       <img src="./photo.jpg" alt="" />
-       <div class="info">
-        <span class="name">Anita Morszczuk</span>
-        <p>Aktywny Teraz</p>
-       </div>
-      </div>
-      <i class="active fa-solid fa-circle"></i>
-     </div>
-     <div class="mainContent other">
-      <div class="userInfo">
-       <img src="./photo.jpg" alt="" />
-       <div class="info">
-        <span class="name">Anita Morszczuk</span>
-        <p>Aktywny Teraz</p>
-       </div>
-      </div>
-      <i class="active fa-solid fa-circle"></i>
-     </div>
-     <div class="mainContent other">
-      <div class="userInfo">
-       <img src="./photo.jpg" alt="" />
-       <div class="info">
-        <span class="name">Anita Morszczuk</span>
-        <p>Aktywny Teraz</p>
-       </div>
-      </div>
-      <i class="active fa-solid fa-circle"></i>
-     </div>
-    </div>
+    <div class="userList"></div>
    </div>
   </div>
  </div>
+ <script src="./scripts/users.js"></script>
 </body>
 
 </html>
