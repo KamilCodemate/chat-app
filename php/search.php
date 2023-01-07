@@ -1,5 +1,7 @@
 <?php
+session_start();
 include_once "connect.php";
+$out_id = $_SESSION['unique_id'];
 $eq = '';
 
 $searchValue = mysqli_real_escape_string($conn, $_POST['searchValue']);

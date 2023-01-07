@@ -12,7 +12,7 @@ $eq2 = '';
     if(mysqli_num_rows($qry2) > 0)
     {
 
-        $eq2 = strlen($row2['content']) > 15 ? $row2['content'] : substr($row2['content'], 0, 15);
+        $eq2 = strlen($row2['content']) > 15 ? $row2['content'] : substr($row2['content'], 0, 15).'...';
     } else{
         $eq2 = 'Rozpocznij konwersację!';
     }
