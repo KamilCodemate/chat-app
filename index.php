@@ -23,6 +23,7 @@ if (isset($_SESSION['unique_id']))
   <div class="mainField">
    <section class="form signUp">
     <header>Czat Online</header>
+    <hr class='headerLine' />
     <form action="#" enctype="multipart/form-data">
      <div class="error"> </div>
 
@@ -39,6 +40,7 @@ if (isset($_SESSION['unique_id']))
      <div class="formElement">
       <input type="password" placeholder="Hasło" name="password" />
      </div>
+
      <br />
      <div class="formElement">
       <label>Wybierz Avatar</label>

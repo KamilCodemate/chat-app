@@ -21,7 +21,7 @@
      <div class="error"> </div>
 
      <div class="formElement">
-      <input type="email" placeholder="Adres Email" name='email' />
+      <input type="text" placeholder="Adres Email" name='email' />
      </div>
      <div class="formElement">
       <input type="password" placeholder="Hasło" name='password' />
