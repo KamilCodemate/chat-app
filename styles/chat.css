@@ -108,7 +108,7 @@
   width: fit-content;
   min-width: 50%;
 }
-.inMsg img {
+.avatarImg {
   width: 30px;
   height: 30px;
   border-radius: 100%;
@@ -128,7 +128,7 @@
   padding-left: 10px;
 }
 .writing input[type='text'] {
-  width: 40%;
+  width: 80%;
   height: 4vh;
   font-size: 1em;
   border-radius: 10px;
@@ -150,6 +150,9 @@
 
 .writingForm {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .userField {
   width: 25vw;
@@ -175,4 +178,28 @@
 }
 .chatUsers {
   border-right: 1px solid black;
+}
+.msgWrite {
+  width: 50%;
+}
+.tools {
+  width: 50%;
+  padding-right: 50px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.attachmentSimbol {
+  transition: 0.5s all;
+}
+.attachmentSimbol:hover {
+  transform: translateY(-8px);
+  cursor: pointer;
+}
+.chatImage img {
+  border-radius: 10px;
+  max-height: 50vh;
+  max-width: 50vw;
 }

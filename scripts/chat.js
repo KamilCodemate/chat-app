@@ -1,5 +1,6 @@
 const form = document.querySelector('.writingForm');
 const input = document.querySelector('.textInp');
+const attachment = document.querySelector('.chatFileInput');
 const writingBtn = document.querySelector('.writingBtn');
 const msgContainer = document.querySelector('.messages');
 
@@ -12,6 +13,12 @@ writingBtn.addEventListener('click', () => {
   xhr.open('POST', 'php/sendMsg.php', true);
   xhr.addEventListener('load', () => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
+      if (xhr.status === 200) {
+        console.log(xhr.response);
+        if (xhr.response === 'success') {
+          attachment.value = '';
+        }
+      }
     }
   });
   let formData = new FormData(form);

@@ -32,7 +32,7 @@ if(filter_var($email, FILTER_VALIDATE_EMAIL))
           $time = time();
           $newImgName = $time . $imgName;
           move_uploaded_file($tmpName, "images/".$newImgName);
-          $status = "Aktywny teraz";
+          $status = "Aktywny Teraz";
           $randomId = rand(time(), 10000000);
           $qry2 = mysqli_query($conn, "INSERT INTO users (unique_id, name, surname, email, password, img, status)
           VALUES ($randomId, '$name', '$surname', '$email', '$password', '$newImgName', '$status')");

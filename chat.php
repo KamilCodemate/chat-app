@@ -23,6 +23,7 @@ if(!isset($_SESSION['unique_id']))
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
   integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 </head>
 
 <body>
@@ -68,14 +69,23 @@ if(mysqli_num_rows($qry) > 0)
 
    </div>
    <div class="writing">
-    <form action="#" class='writingForm'>
+    <form action="#" class='writingForm' ectype="multipart/form-data">
      <input type="hidden" name='outId' value="<?php echo $_SESSION['unique_id']?>">
      <input type="hidden" name='inId' value="<?php echo $id?>">
-     <input type="text" placeholder="Napisz wiadomość..." class='textInp' name='content' />
-     <button class='writingBtn'><i class="fa-regular fa-paper-plane"></i></button>
+     <div class="msgWrite">
+      <input type="text" placeholder="Napisz wiadomość..." class='textInp' name='content' />
+      <button class='writingBtn'><i class="fa-regular fa-paper-plane"></i></button>
+     </div>
+     <div class="tools">
+
+      <label for="fileInput" class='attachmentSimbol'>
+       <i class="fa-solid fa-paperclip"></i>
+      </label>
+      <input type="file" id="fileInput" style="display:none" class='chatFileInput' name='image' />
     </form>
    </div>
   </div>
+ </div>
  </div>
  <script src="./scripts/chat.js"></script>
  <script src="./scripts/usersChat.js"></script>
