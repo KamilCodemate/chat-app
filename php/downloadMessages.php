@@ -35,7 +35,7 @@ $out_id = mysqli_real_escape_string($conn, $_POST['outId']);
     $eq .= ' <div class="chatElement inMsg">
      <img class = "avatarImg" src="php/images/'.$row2['img'].'" alt="" />
      <div class="msgContent">
-      <span>'.$row['content'].'</span>
+      <span>'.$row['content'].'</span><br/><br/>
     '.$textImg.'
      </div>
     </div>';

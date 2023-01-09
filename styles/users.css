@@ -78,7 +78,8 @@
 .disactive {
   color: white;
 }
-.mainContent a {
+
+.userList a {
   text-decoration: none;
   color: black;
 }
