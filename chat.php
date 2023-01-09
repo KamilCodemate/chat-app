@@ -27,6 +27,16 @@ if(!isset($_SESSION['unique_id']))
 
 <body>
  <div class="container">
+  <div class="chatUsers">
+   <header>
+    <h2>Dostępni użytkownicy: </h2>
+   </header>
+   <br />
+   <div class="userField">
+
+
+   </div>
+  </div>
   <div class="mainField">
    <div class="user">
     <header>
@@ -68,6 +78,7 @@ if(mysqli_num_rows($qry) > 0)
   </div>
  </div>
  <script src="./scripts/chat.js"></script>
+ <script src="./scripts/usersChat.js"></script>
 </body>
 
 </html>

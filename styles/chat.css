@@ -1,21 +1,23 @@
 .container {
-  width: 100vw;
-  min-height: 100vh;
+  /* width: 100vw;
+
   background-color: #b3b3b3;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: #171717;
+  justify-content: center; */
+  /* min-height: 100vh;
+  background-color: #171717; */
+  display: flex;
+  max-height: 100vh;
 }
 .formElement label {
   font-weight: 400;
 }
 .mainField {
   height: auto;
-  width: 80vw;
-  background-color: white;
-  border-radius: 10px;
-  width: 500px;
+
+  height: 100vh;
+  width: 75%;
 }
 
 .mainContent {
@@ -83,6 +85,7 @@
   overflow-y: scroll;
   scrollbar-width: 0;
   padding-bottom: 20px;
+  min-height: 80%;
 }
 
 .msgContent {
@@ -118,15 +121,15 @@
 }
 .writing {
   background-color: white;
-  height: 7vh;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  height: 10%;
+  /* border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; */
   display: flex;
   align-items: center;
   padding-left: 10px;
 }
 .writing input[type='text'] {
-  width: 70%;
+  width: 40%;
   height: 4vh;
   font-size: 1em;
   border-radius: 10px;
@@ -148,4 +151,22 @@
 
 .writingForm {
   width: 100%;
+}
+.userField {
+  width: 25vw;
+  height: 100vh;
+  background-color: white;
+  padding: 20px;
+}
+.userField a {
+  text-decoration: none;
+  color: black;
+}
+.chatUsers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 10px;
+  overflow-y: auto;
 }
