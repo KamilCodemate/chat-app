@@ -74,7 +74,6 @@
 }
 
 .messages {
-  max-height: 80vh;
   margin-top: 10px;
   background-color: rgb(212, 212, 212);
   display: flex;
@@ -85,7 +84,7 @@
   overflow-y: scroll;
   scrollbar-width: 0;
   padding-bottom: 20px;
-  min-height: 80%;
+  height: 84%;
 }
 
 .msgContent {
@@ -121,7 +120,7 @@
 }
 .writing {
   background-color: white;
-  height: 10%;
+  height: 8%;
   /* border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px; */
   display: flex;
@@ -169,4 +168,11 @@
   flex-direction: column;
   padding-top: 10px;
   overflow-y: auto;
+}
+.chatUsers,
+.userField {
+  background-color: #c8c8c8fa;
+}
+.chatUsers {
+  border-right: 1px solid black;
 }

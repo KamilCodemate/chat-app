@@ -4,7 +4,7 @@ $eq2 = '';
 
  while($row = mysqli_fetch_assoc($qry))
  {
-    $color = trim($row['status']) == 'Aktywny teraz' ? 'rgb(17, 167, 17)' : 'grey';
+    $color = (trim($row['status']) == 'Aktywny Teraz') ? 'rgb(17, 167, 17)' : 'grey';
     $qry2 = mysqli_query($conn, "SELECT * FROM messages WHERE in_id = {$row['unique_id']} OR out_id = {$row['unique_id']} AND out_id = '$out_id'
     OR out_id = {$row['unique_id']} ORDER BY id DESC LIMIT 1");
 
