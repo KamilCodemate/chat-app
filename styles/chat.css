@@ -239,3 +239,10 @@
   align-items: center;
   justify-content: center;
 }
+.emoji-button {
+  transition: 0.3s all;
+}
+.emoji-button:hover {
+  transform: translateY(-8px);
+  cursor: pointer;
+}

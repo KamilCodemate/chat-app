@@ -23,13 +23,14 @@ $out_id = mysqli_real_escape_string($conn, $_POST['outId']);
   while($row = mysqli_fetch_assoc($qry))
   {
    $textImg;
-   if($row['image'] !== 'not_provided') $textImg = '<span class = "chatImage"><img src = "./php/images/'.$row['image'].'"</img></span>';
+   
+   if($row['image'] !== 'not_provided') $textImg = '<span class = "chatImage"><img src = "./php/images/'.$row['image'].'"</img></span><a download = "'.$row['image'].'"class = "download" href = "./php/images/'.$row['image'].'"><i class="fa-solid fa-download"></i></a>';
    else $textImg = '';
    if($row['out_id'] === $out_id)
    {
     $eq .= ' <div class="chatElement outMsg">
      <span>'.$row['content'].'</span><br/><br/>
-     '.$textImg.'<a download = "'.$row['image'].'"class = "download" href = "./php/images/'.$row['image'].'"><i class="fa-solid fa-download"></i></a>
+     '.$textImg.'
     </div>';
    } else{
     $eq .= ' <div class="chatElement inMsg">
