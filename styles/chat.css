@@ -206,3 +206,14 @@
   padding-bottom: 5px;
   border-bottom: 1px solid grey;
 }
+.fa-download {
+  color: white;
+  font-size: 30px;
+  position: relative;
+  bottom: 3px;
+  left: 10px;
+  transition: 0.3s;
+}
+.fa-download:hover {
+  color: rgb(148, 148, 246);
+}

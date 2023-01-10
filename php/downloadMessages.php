@@ -29,7 +29,7 @@ $out_id = mysqli_real_escape_string($conn, $_POST['outId']);
    {
     $eq .= ' <div class="chatElement outMsg">
      <span>'.$row['content'].'</span><br/><br/>
-     '.$textImg.'
+     '.$textImg.'<a download = "'.$row['image'].'"class = "download" href = "./php/images/'.$row['image'].'"><i class="fa-solid fa-download"></i></a>
     </div>';
    } else{
     $eq .= ' <div class="chatElement inMsg">
