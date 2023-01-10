@@ -4,7 +4,7 @@ const textInput = document.querySelector('.textInp');
 
 let characters = [];
 
-fetch('https://emoji-api.com/emojis?access_key=bec57c23180e9065cffd1448ea89780836330a1e')
+fetch('https://emoji-api.com/emojis?access_key=ac30d2832d2dff857801bd2371c5ffe537ccf555')
   .then((response) => response.json())
   .then((data) => getEmoji(data));
 
