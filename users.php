@@ -52,7 +52,7 @@ if(mysqli_num_rows($qry) > 0)
     <div class="search">
      <span>Aby rozpocząć czatowanie, wybierz użytkownika</span>
      <input type="text" placeholder="Wpisz imię, aby wyszukać..." class='searchBar' />
-     <button><i class="fa-solid fa-magnifying-glass"></i></button>
+     <button class='delete'><i class="fa-solid fa-x"></i></button>
     </div>
 
     <div class="userList"></div>

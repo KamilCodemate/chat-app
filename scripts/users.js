@@ -1,5 +1,7 @@
 const search = document.querySelector('.searchBar');
 const userList = document.querySelector('.userList');
+const deleteButton = document.querySelector('.delete');
+
 let searchValue = '';
 let prevResponse = '';
 let allUsersResponse = '';
@@ -48,3 +50,7 @@ search.addEventListener('keydown', () => {
 setInterval(() => {
   if (searchValue === '') userList.innerHTML = allUsersResponse;
 }, 1000);
+deleteButton.addEventListener('click', () => {
+  search.value = '';
+  userList.innerHTML = allUsersResponse;
+});
