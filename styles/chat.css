@@ -217,3 +217,25 @@
 .fa-download:hover {
   color: rgb(148, 148, 246);
 }
+.emoji-selector {
+  display: none;
+}
+.emoji-selector.active {
+  display: block;
+  position: absolute;
+  bottom: 10%;
+  right: 1.5%;
+  width: 25vw;
+  background-color: rgb(255, 255, 255);
+  height: 25vh;
+  border-radius: 10px;
+}
+.emoji-selector.active ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  max-height: 25vh;
+  align-items: center;
+  justify-content: center;
+}

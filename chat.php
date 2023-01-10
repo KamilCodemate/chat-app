@@ -83,12 +83,18 @@ if(mysqli_num_rows($qry) > 0)
       </label>
       <input type="file" id="fileInput" style="display:none" class='chatFileInput' name='image' />
     </form>
+
+    <span class="emoji-button">🙂</span>
+    <div class='emoji-selector'></div>
    </div>
+
   </div>
+
  </div>
  </div>
  <script src="./scripts/chat.js"></script>
  <script src="./scripts/usersChat.js"></script>
+ <script src='./scripts/emoji.js'></script>
 </body>
 
 </html>
