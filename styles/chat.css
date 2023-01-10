@@ -63,8 +63,6 @@
   font-size: 1.3em;
 }
 .chatElement {
-  width: 70%;
-
   margin-top: 20px;
   padding: 5px;
 
@@ -200,6 +198,11 @@
 }
 .chatImage img {
   border-radius: 10px;
-  max-height: 50vh;
-  max-width: 50vw;
+  max-height: 100%;
+  max-width: 50vh;
+}
+.mainContent.other {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid grey;
 }
