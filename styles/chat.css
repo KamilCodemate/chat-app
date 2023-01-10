@@ -187,6 +187,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  gap: 10px;
 }
 
 .attachmentSimbol {
@@ -198,14 +199,15 @@
 }
 .chatImage img {
   border-radius: 10px;
-  max-height: 100%;
-  max-width: 50vh;
+  max-height: 50vh;
+  max-width: 90%;
 }
 .mainContent.other {
   margin-bottom: 10px;
   padding-bottom: 5px;
   border-bottom: 1px solid grey;
 }
+
 .fa-download {
   color: white;
   font-size: 30px;
@@ -238,6 +240,13 @@
   max-height: 25vh;
   align-items: center;
   justify-content: center;
+}
+.emoji-selector.active ul li {
+  transition: 0.3s all;
+}
+.emoji-selector.active ul li:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
 }
 .emoji-button {
   transition: 0.3s all;
