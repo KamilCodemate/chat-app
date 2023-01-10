@@ -12,7 +12,9 @@ $eq2 = '';
     if(mysqli_num_rows($qry2) > 0)
     {
 
-        $eq2 = strlen($row2['content']) > 15 ? $row2['content'] : substr($row2['content'], 0, 15).'...';
+        $eq2 = strlen($row2['content']) < 25 ? $row2['content'] : substr($row2['content'], 0, 15).'...';
+        if ($row2['content'] == '' && $row2['image'] !== 'not_provided')
+            $eq2 = 'Wysłano zdjęcie.';
     } else{
         $eq2 = 'Rozpocznij konwersację!';
     }
