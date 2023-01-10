@@ -33,7 +33,7 @@
      </div>
     </form>
    </section>
-   <div class="gotAcc">Nie masz jeszcze konta? <a href="./index.php">Utwórz je teraz</a> </div>
+   <div class="gotAcc logAsk">Nie masz jeszcze konta? <a href="./index.php">Utwórz je teraz</a> </div>
   </div>
  </div>
  <script src="./scripts/logIn.js"></script>
