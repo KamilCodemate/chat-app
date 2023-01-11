@@ -9,7 +9,7 @@ $out_id = mysqli_real_escape_string($conn, $_POST['outId']);
  $eq = '';
 
  $qry = mysqli_query($conn, "SELECT * FROM messages WHERE out_id = $out_id AND in_id = $in_id
- OR out_id = $in_id AND in_id = $out_id ORDER BY id ASC");
+ OR out_id = $in_id AND in_id = $out_id AND (content != '' OR image !='not_provided') ORDER BY id ASC");
 
 
  $qry2 = mysqli_query($conn, "SELECT * FROM users WHERE unique_id = $in_id"); 
