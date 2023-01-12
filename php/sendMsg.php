@@ -26,7 +26,7 @@ $validExts = ['png', 'jpeg', 'jpg'];
           $finalName = $newImgName;
         }
 
-        $qry = mysqli_query($conn, "INSERT INTO messages (in_id, out_id, content, image) VALUES ('$in_id', '$out_id', '$content', '$finalName')");
+       if($content != "" || $finalName != "not_provided") $qry = mysqli_query($conn, "INSERT INTO messages (in_id, out_id, content, image) VALUES ('$in_id', '$out_id', '$content', '$finalName')");
         unset($_FILES['image'], $imgName, $imgType, $tmpName, $imgEnd, $imgExtension, $in_id, $out_id, $content, $qry);
         echo 'success';
       }
